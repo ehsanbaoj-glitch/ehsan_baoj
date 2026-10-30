@@ -3,108 +3,109 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
 <title>EHSAN BAOJ | Official Website</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta name="description" content="وب‌سایت رسمی احسان باوج؛ خواننده و ترانه‌سرای ایرانی">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#080808;color:#f5f0eb;font-family:Vazirmatn,sans-serif}
+body{background:#080808;color:#f5f2ee;font-family:'Vazirmatn',sans-serif}
 a{color:inherit;text-decoration:none}
-.hero{height:100svh;min-height:650px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:radial-gradient(ellipse at 60% 35%,#60483c 0%,#30231e 25%,#11100f 58%,#050505 100%)}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505bb,#05050522,#05050599)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#080808 0%,transparent 30%,#08080866 100%)}
-nav{position:absolute;z-index:3;top:0;left:0;right:0;padding:28px 6%;display:flex;justify-content:space-between;align-items:center;direction:ltr}
-.logo{font-family:Georgia,serif;letter-spacing:6px;font-size:16px}
-.links{display:flex;gap:24px}
-.links a{font-size:10px;letter-spacing:2px;color:#d3c3b8}
-.content{position:relative;z-index:2;margin-top:70px}
-.label{font-size:10px;letter-spacing:6px;color:#c7a58e;direction:ltr}
-h1{font-family:Georgia,serif;font-size:clamp(53px,12vw,112px);font-weight:400;letter-spacing:7px;line-height:1.15;direction:ltr;margin:25px 0}
-h1 span{display:block;color:#c2a18a}
-.subtitle{font-size:11px;letter-spacing:5px;color:#d8ccc3;direction:ltr}
-.buttons{margin-top:40px;display:flex;justify-content:center;gap:15px}
-.btn{border:1px solid #b18c73;padding:12px 28px;border-radius:30px;font-size:12px;transition:.3s}
-.btn:hover{background:#b18c73;color:#080808}
-.insta{position:absolute;bottom:32px;z-index:3;font-size:11px;letter-spacing:3px;direction:ltr;color:#d1b5a1}
-.scroll{position:absolute;bottom:70px;right:35px;z-index:3;font-size:9px;letter-spacing:3px;writing-mode:vertical-rl;color:#a58b7c}
-section{max-width:850px;margin:auto;padding:90px 24px}
-.eyebrow{text-align:center;font-size:10px;letter-spacing:5px;color:#bd987e;direction:ltr}
-h2{text-align:center;font-size:27px;font-weight:400;margin:16px 0 40px}
-.song{display:flex;justify-content:space-between;align-items:center;padding:21px 5px;border-bottom:1px solid #ffffff1c}
-.song small{display:block;color:#928982;font-size:11px;margin-top:6px}
-.number{font-family:Georgia,serif;color:#b99a84;direction:ltr}
-.about{text-align:center;line-height:2.5;color:#c6beb8;font-size:14px}
-.signature{text-align:center;font-family:Georgia,serif;font-style:italic;font-size:34px;color:#bd9a83;direction:ltr;margin-top:35px}
-.coming{text-align:center;padding:40px 15px;border:1px solid #ffffff20;border-radius:12px;color:#c5b7ad;line-height:2}
-footer{text-align:center;padding:40px 15px;color:#8d827b;border-top:1px solid #ffffff15;font-size:11px}
-footer a{color:#bd9a83}
-@media(max-width:600px){
-nav{padding:22px 16px}
-.logo{font-size:12px;letter-spacing:3px}
-.links{gap:12px}
-.links a{font-size:9px}
-h1{letter-spacing:4px}
-.scroll{right:12px}
-}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#292323 0%,#111 42%,#050505 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#080808 0%,transparent 50%,#08080866 100%)}
+.hero-content{position:relative;z-index:1;padding:30px}
+.monogram{width:110px;height:110px;border:1px solid #a58a70;border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;font-size:35px;letter-spacing:4px;color:#d7b99a}
+.hero h1{font-family:Georgia,serif;font-size:clamp(42px,9vw,88px);letter-spacing:5px;direction:ltr;font-weight:400}
+.hero p{color:#b9aaa0;font-size:13px;letter-spacing:3px;margin-top:16px}
+.hero .line{width:55px;height:1px;background:#a58a70;margin:28px auto}
+.instagram{position:absolute;bottom:34px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:3px;color:#c8b6a5;direction:ltr}
+nav{position:sticky;top:0;z-index:5;background:#080808ed;border-bottom:1px solid #24201d;display:flex;justify-content:center;gap:35px;padding:18px 10px;flex-wrap:wrap}
+nav a{font-size:12px;color:#bdb4ac;transition:.3s}
+nav a:hover{color:#d7b99a}
+section{padding:90px 22px;max-width:1050px;margin:auto}
+.section-title{text-align:center;font-size:25px;font-weight:400;margin-bottom:12px}
+.section-sub{text-align:center;color:#82776e;font-size:11px;letter-spacing:3px;margin-bottom:45px;direction:ltr}
+.songs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.song{border:1px solid #282321;background:linear-gradient(145deg,#171413,#0d0c0c);padding:24px;display:flex;align-items:center;justify-content:space-between;transition:.3s}
+.song:hover{border-color:#94765c;transform:translateY(-3px)}
+.song h3{font-size:15px;font-weight:500}
+.song small{display:block;color:#83766c;font-size:10px;margin-top:7px}
+.play{width:37px;height:37px;border:1px solid #8e755e;border-radius:50%;display:grid;place-items:center;color:#d3b69a;font-size:13px}
+.bio{max-width:700px;margin:auto;text-align:center;color:#b5aaa1;font-size:14px;line-height:2.5}
+.bio strong{color:#e3c6a7;font-weight:500}
+.upcoming{text-align:center;border:1px solid #292321;padding:55px 20px;background:linear-gradient(135deg,#171312,#090909)}
+.upcoming h3{font-size:23px;font-weight:400;margin-bottom:12px}
+.upcoming p{font-size:12px;color:#9c8d81}
+.contact{text-align:center}
+.contact a{display:inline-block;border:1px solid #8e755e;padding:12px 30px;margin-top:20px;font-size:12px;direction:ltr}
+footer{border-top:1px solid #24201d;text-align:center;padding:28px 15px;color:#71665e;font-size:10px;letter-spacing:2px;direction:ltr}
+@media(max-width:600px){nav{gap:18px}section{padding:65px 18px}.hero h1{letter-spacing:2px}}
 </style>
 </head>
 <body>
 
-<header class="hero" id="home">
-<nav>
-<div class="logo">EHSAN BAOJ</div>
-<div class="links">
-<a href="#home">HOME</a>
-<a href="#songs">MUSIC</a>
-<a href="#bio">BIO</a>
-</div>
-</nav>
-
-<div class="content">
-<div class="label">OFFICIAL ARTIST WEBSITE</div>
-<h1>EHSAN <span>BAOJ</span></h1>
-<div class="subtitle">SINGER / SONGWRITER</div>
-<div class="buttons">
-<a class="btn" href="#songs">موسیقی من</a>
-<a class="btn" href="#bio">درباره من</a>
-</div>
-</div>
-<a class="insta" href="https://instagram.com/ehsan_baoj" target="_blank">@EHSAN_BAOJ</a>
-<div class="scroll">SCROLL TO EXPLORE</div>
+<header class="hero">
+  <div class="hero-content">
+    <div class="monogram">EB</div>
+    <h1>EHSAN BAOJ</h1>
+    <div class="line"></div>
+    <p>خواننده، ترانه‌سرا و هنرمند</p>
+  </div>
+  <a class="instagram" href="https://instagram.com/ehsan_baoj" target="_blank">@EHSAN_BAOJ</a>
 </header>
 
-<section id="songs">
-<div class="eyebrow">DISCOGRAPHY</div>
-<h2>آرشیو موسیقی</h2>
-<div class="song"><div>یادته می‌گفتی<small>Persian Pop</small></div><span class="number">01</span></div>
-<div class="song"><div>کجایی تو<small>Persian Pop</small></div><span class="number">02</span></div>
-<div class="song"><div>گل من<small>Single</small></div><span class="number">03</span></div>
-<div class="song"><div>بی‌معرفت<small>Single</small></div><span class="number">04</span></div>
-<div class="song"><div>خسته شدم<small>Single</small></div><span class="number">05</span></div>
+<nav>
+  <a href="#music">آرشیو آثار</a>
+  <a href="#about">درباره من</a>
+  <a href="#upcoming">به‌زودی</a>
+  <a href="#contact">ارتباط</a>
+</nav>
+
+<section id="music">
+  <h2 class="section-title">آرشیو موسیقی</h2>
+  <p class="section-sub">MUSIC ARCHIVE</p>
+  <div class="songs">
+    <div class="song"><div><h3>یادته می‌گفتی</h3><small>SINGLE</small></div><span class="play">▶</span></div>
+    <div class="song"><div><h3>کجایی تو</h3><small>SINGLE</small></div><span class="play">▶</span></div>
+    <div class="song"><div><h3>گل من</h3><small>SINGLE</small></div><span class="play">▶</span></div>
+    <div class="song"><div><h3>بی‌معرفت</h3><small>SINGLE</small></div><span class="play">▶</span></div>
+    <div class="song"><div><h3>خسته شدم</h3><small>SINGLE</small></div><span class="play">▶</span></div>
+  </div>
 </section>
 
-<section id="bio">
-<div class="eyebrow">ABOUT THE ARTIST</div>
-<h2>درباره احسان باوج</h2>
-<p class="about">
-احسان باوج، خواننده و ترانه‌سرای ایرانی است.
-مسیر موسیقی خود را با رپ و آر‌اند‌بی آغاز کرد و به‌مرور به دنیای پاپ و ملودی‌های احساسی رسید.
-موسیقی برای او راهی برای روایت احساسات، خاطرات و داستان‌هایی است که گاهی نمی‌توان با کلمات معمولی بیان کرد.
-</p>
-<div class="signature">Ehsan Baoj</div>
+<section id="about">
+  <h2 class="section-title">درباره احسان باوج</h2>
+  <p class="section-sub">ABOUT THE ARTIST</p>
+  <div class="bio">
+    <strong>احسان باوج</strong>، خواننده و ترانه‌سرای ایرانی، متولد ۱۱ آبان ۱۳۷۳ در تهران است.
+    <br>
+    فعالیت موسیقی خود را با سبک‌های رپ و R&B آغاز کرد و به‌مرور مسیر هنری‌اش را به سمت موسیقی پاپ و فضایی احساسی‌تر گسترش داد.
+    <br>
+    انتشار رسمی آثارش از سال ۱۳۹۴ آغاز شد و از سال ۱۴۰۱ با تمرکز بیشتری مسیر پاپ را دنبال کرد.
+    <br>
+    موسیقی برای او راهی برای روایت احساسات، خاطرات و تجربه‌های انسانی است.
+  </div>
 </section>
 
-<section>
-<div class="eyebrow">COMING SOON</div>
-<h2>به‌زودی</h2>
-<div class="coming">داستان‌های تازه‌ای در راه‌اند...<br>New music coming soon.</div>
+<section id="upcoming">
+  <h2 class="section-title">آثار آینده</h2>
+  <p class="section-sub">COMING SOON</p>
+  <div class="upcoming">
+    <h3>داستان ادامه دارد...</h3>
+    <p>آثار جدید EHSAN BAOJ به‌زودی منتشر می‌شوند.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">در ارتباط باشیم</h2>
+  <p class="section-sub">FOLLOW THE JOURNEY</p>
+  <a href="https://instagram.com/ehsan_baoj" target="_blank">INSTAGRAM @EHSAN_BAOJ</a>
 </section>
 
 <footer>
-EHSAN BAOJ © 2026
-<br><br>
-<a href="https://instagram.com/ehsan_baoj">INSTAGRAM</a>
+  EHSAN BAOJ © 2026 — ALL RIGHTS RESERVED
 </footer>
 
 </body>
